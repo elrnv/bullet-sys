@@ -1,6 +1,17 @@
 [package]
-name = "bullet"
+name = "bullet-sys"
 version = "0.1.0"
 authors = ["Egor Larionov <egor.larionov@gmail.com>"]
 
+description = "Rust FFI bindings for the Bullet Real-time physics library"
+repository = "https://github.com/elrnv/bullet-rs"
+
+readme = "README.md"
+
+build = "build.rs"
+
 [dependencies]
+
+[build-dependencies]
+bindgen = "0.29"
+cmake = "0.1"

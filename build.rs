@@ -88,7 +88,7 @@ fn main() {
 	log_var!(include_dir);
 
 	// The C_API currently lives in the examples. This may change in the future
-	println!("cargo:rustc-link-search=native={}", out.display());
+	println!("cargo:rustc-link-search=native={}", lib_dir.display());
 	for lib in LIBRARIES.iter() {
 		println!("cargo:rustc-link-lib={}", lib);
 	}
